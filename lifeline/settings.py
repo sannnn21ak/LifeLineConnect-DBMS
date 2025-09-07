@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'lifeline.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'lifeline_db',      # The name of your MySQL database
+        'USER': 'root',  # Your MySQL username
+        'PASSWORD': 'San58390@', # Your MySQL password
+        'HOST': 'localhost',        # The server where MySQL is running
+        'PORT': '3306',             # The default MySQL port
     }
 }
 
